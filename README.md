@@ -1,4 +1,4 @@
-# Musicals
+# Musicals Guide
 A website that guides you to my favourite musicals. You're welcome to contribute.
 
 Made with ReactJS, Axios (Front End), NodeJS, Express, PostgreSQL (Back End).
