@@ -21,7 +21,7 @@ const Edit = ({oldName, oldContent, oldImage, oldMusic, serverBase, setEdit}) =>
             console.log(`Error here: ${error}`);
         });
         setEdit(false);
-        // window.location.reload();
+        window.location.reload();
     }
 
     const fileChange = () => {
