@@ -16,7 +16,7 @@ Made with ReactJS, Axios (Front End), NodeJS, Express, PostgreSQL (Back End).
 - The PostgreSQL database is hosted in elephantsql.com, so any changes are saved across devices.
 - Server is a simple CRUD REST API with node-postgres
 
-##How to use this:
+## How to use this:
 - Pull this repo down 
   ````
     git pull https://github.com/nghihua/musicals
@@ -33,4 +33,4 @@ Made with ReactJS, Axios (Front End), NodeJS, Express, PostgreSQL (Back End).
     npm install
     npm start
   ````
-  Note: The default port for server is 8000, if you change this in index.js, remember to also change serverBase is App.js (client).
+Note: The default port for server is 8000, if you change this in index.js, remember to also change serverBase is App.js (client).
