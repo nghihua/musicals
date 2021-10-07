@@ -112,6 +112,8 @@ a {
   margin-bottom: 10px;
 }
 .musical-content {
+  text-align: left;
+  white-space: pre-line;
   padding-top: 50px;
   color: var(--color-primary-light2);
 }
