@@ -13,8 +13,11 @@ const useAudio = (url) => {
   );
 
   useEffect(() => {
+    console.log("player loaded");
     audio.addEventListener('ended', () => setPlaying(false));
     return () => {
+      setPlaying(false);
+      console.log("player out" + playing);
       audio.removeEventListener('ended', () => setPlaying(false));
     };
   }, []);
