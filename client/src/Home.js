@@ -7,6 +7,7 @@ const Home = ({musicals, setMusicals, serverBase}) => {
   useEffect(() => {
     axios.get(serverBase).then((response) => {
       setMusicals(response.data);
+      console.log(response);
       console.log(response.data);
     }).catch((error) => {
       console.log(error);

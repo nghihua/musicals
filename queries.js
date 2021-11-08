@@ -18,11 +18,12 @@ const pool = new Pool({ // create connection to database
 }) */
 
 const getMusicals = (request, response) => {
-  console.log('Get musical by key!');
+  console.log('Get all musicals!');
     pool.query('SELECT * FROM musicals ORDER BY key ASC', (error, results) => {
       if (error) {
         console.log(error);
       }
+      console.log(results.rows);
       response.status(200).json(results.rows);
     })
 };
@@ -34,6 +35,7 @@ const getMusicalByKey = (request, response) => {
       if (error) {
         throw error
       }
+      console.log(results.rows);
       response.status(200).json(results.rows)
     });
 };

@@ -15,7 +15,7 @@ const Edit = ({oldName, oldContent, oldImage, oldMusic, serverBase, setEdit}) =>
         console.log('Handle edit!');
         e.preventDefault();
         const musical = {name, content, image, music};
-        axios.put(`${serverBase}/${id}`, musical).then((response) => {
+        axios.put(`server/${id}`, musical).then((response) => {
             console.log(response);
         }).catch((error) => {
             console.log(`Error here: ${error}`);

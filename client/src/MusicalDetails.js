@@ -14,7 +14,7 @@ const MusicalDetails = ({serverBase}) => {
   const handleClick = () => {
     if (window.confirm("Are you sure you want to delete?")) {
       axios
-      .delete(`${serverBase}/${id}`)
+      .delete(`server/${id}`)
       .then(() => {
         alert("Post deleted!");
         setMusical(null)
@@ -29,8 +29,9 @@ const MusicalDetails = ({serverBase}) => {
   }
 
   useEffect(() => {
-    axios.get(`${serverBase}/${id}`).then((response) => {
+    axios.get(`server/${id}`).then((response) => {
       setMusical(response.data[0]);
+      console.log(response);
       console.log(response.data[0]);
     }).catch((error) => {
       console.log(error);

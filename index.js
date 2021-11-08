@@ -21,13 +21,13 @@ app.get('/', (request, response) => {
 });
 
 app.get('/musicals', db.getMusicals);
-app.get('/musicals/:key', db.getMusicalByKey);
+app.get('/musicals/server/:key', db.getMusicalByKey);
 app.post('/musicals', (request, response) => {
   console.log(`body here: ${request.body}`);
   db.createMusical(request, response);
 });
-app.put('/musicals/:key', db.updateMusical);
-app.delete('/musicals/:key', db.deleteMusical);
+app.put('/musicals/server/:key', db.updateMusical);
+app.delete('/musicals/server/:key', db.deleteMusical);
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
