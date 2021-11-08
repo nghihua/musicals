@@ -5,7 +5,7 @@ const db = require('./queries');
 const path = require('path');
 const app = express();
 
-const port = process.env.port || 8000;
+const port = process.env.PORT;
 
 app.use(cors());
 app.use(bodyParser.json());
