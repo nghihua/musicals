@@ -7,7 +7,8 @@ import Create from './Create';
 import NotFound from './NotFound';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const serverBase = `${proccess.env.HOST}:${PORT}/musicals`;
+//const serverBase = `${proccess.env.HOST}:${PORT}/musicals`;
+const serverBase = `musicals`;
 
 function App() {
   const [musicals, setMusicals] = useState();

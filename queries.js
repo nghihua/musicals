@@ -9,6 +9,14 @@ const pool = new Pool({ // create connection to database
   }
 });
 
+/* const pool = new Pool({
+  user: 'me',
+  host: 'localhost',
+  database: 'api',
+  password: 'password',
+  port: 5432,
+}) */
+
 const getMusicals = (request, response) => {
   console.log('Get musical by key!');
     pool.query('SELECT * FROM musicals ORDER BY key ASC', (error, results) => {
