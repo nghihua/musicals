@@ -1,6 +1,8 @@
 # Musicals Guide
 A website that guides you to my favourite musicals. You're welcome to contribute.
 
+Now hosted at: https://musicals-nghi.herokuapp.com/
+
 Made with ReactJS, Axios (Front End), NodeJS, Express, PostgreSQL (Back End).
 
 ## What's in here:
